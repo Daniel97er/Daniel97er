@@ -1,5 +1,7 @@
 ## Hi there 👋
 
+![Snake animation](https://raw.githubusercontent.com/Daniel97er/Daniel97er/output/github-contribution-grid-snake-dark.svg)
+
 <!--
 **Daniel97er/Daniel97er** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
