@@ -1,14 +1,9 @@
 name: Generate Animation
 
 on:
-  # Run automatically every 24 hours
   schedule:
-    - cron: "0 0 * * *"  # Alle 24 Stunden um Mitternacht UTC
-  
-  # Allows manual run
+    - cron: "0 0 * * *"
   workflow_dispatch:
-  
-  # Run on every push to the main branch
   push:
     branches:
     - main
@@ -17,24 +12,21 @@ jobs:
   generate:
     runs-on: ubuntu-latest
     timeout-minutes: 10
-    
+
     steps:
-      # Checkout the repository
       - name: Checkout the repository
         uses: actions/checkout@v3
 
-      # Generate the snake animation
       - name: Generate github-contribution-grid-snake.svg
         uses: Platane/snk/svg-only@v3
         with:
-          github_user_name: Daniel97er  # Ersetze dies durch den gewünschten GitHub-Benutzernamen
+          github_user_name: Daniel97er
           outputs: |
             dist/github-contribution-grid-snake.svg
-            dist/github-contribution-grid-snake-dark.svg?palette=github-dark
+          palette: 'path/to/blue-palette.json'
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          
-      # Push the content to the output branch
+
       - name: Push to output branch
         uses: crazy-max/ghaction-github-pages@v3.1.0
         with:
