@@ -30,7 +30,7 @@ jobs:
           github_user_name: Daniel97er  # Ersetze dies durch den gewünschten GitHub-Benutzernamen
           outputs: |
             dist/github-contribution-grid-snake.svg
-            dist/github-contribution-grid-snake-dark.svg?palette=github-dark&color_snake=#FF0000&color_dots=#0a0a0a,#87CEEB,#87CEEB,#6495ED,#00008B
+            dist/github-contribution-grid-snake-dark.svg?palette=github-dark&color_snake=#FF0000&color_dots=#000000,#87CEEB,#87CEEB,#6495ED,#00008B
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           
