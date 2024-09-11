@@ -19,6 +19,8 @@
 
 <br />
 
-![Meist genutzte Sprachen](https://github-readme-stats.vercel.app/api/top-langs/?username=Daniel97er&layout=compact)
+<div align="center">
+![Meist genutzte Sprachen](https://github-readme-stats.vercel.app/api/top-langs/?username=Daniel97er&layout=compact&theme=dark)
 
-![GitHubStreak](https://github-readme-streak-stats.herokuapp.com/?user=Daniel97er)
+![GitHubStreak](https://github-readme-streak-stats.herokuapp.com/?user=Daniel97er&theme=dark)
+</div>
