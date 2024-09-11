@@ -8,16 +8,15 @@
 ![Snake animation](https://raw.githubusercontent.com/Daniel97er/Daniel97er/output/github-contribution-grid-snake-dark.svg)
 
 <h2 align="center">⚒️ Languages-Frameworks-Tools ⚒️</h2>
-<br/>
+<br>
 <div align="center">
     <img src="https://skillicons.dev/icons?i=react,bootstrap,html,css,vscode,github,git" />
     <img src="https://skillicons.dev/icons?i=nodejs,python,javascript,c,java,mysql,flask,django" /><br>
 </div>
-<br />
+<br>
 
 <h2 align="center">⚡ Stats ⚡</h2>
-<br />
-</br>
+<br>
 
 <div style="display: flex; justify-content: center;">
   <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Daniel97er&layout=compact&theme=dark" style="height: 195px;"/>
