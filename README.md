@@ -20,17 +20,11 @@
 
 ![Meist genutzte Sprachen](https://github-readme-stats.vercel.app/api/top-langs/?username=Daniel97er&layout=compact&theme=dark)
 
-![GitHubStreak](https://github-readme-streak-stats.herokuapp.com/?user=Daniel97er&theme=dark)
+![GitHubStreak](https://github-readme-streak-stats.herokuapp.com/?user=Daniel97er&theme=dark")
 
 </br >
 
-<table>
-  <tr>
-    <td>
-      <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Daniel97er&layout=compact&theme=dark" />
-    </td>
-    <td>
-      <img src="https://github-readme-streak-stats.herokuapp.com/?user=Daniel97er&theme=dark" />
-    </td>
-  </tr>
-</table>
+<div style="display: flex; justify-content: center;">
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Daniel97er&layout=compact&theme=dark" style="height: 195px;"/>
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=Daniel97er&theme=dark" style="height: 195px;"/>
+</div>
