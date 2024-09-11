@@ -17,6 +17,7 @@
 
 <h2 align="center">⚡ Stats ⚡</h2>
 <br />
+</br>
 
 <div style="display: flex; justify-content: center;">
   <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Daniel97er&layout=compact&theme=dark" style="height: 195px;"/>
