@@ -21,3 +21,7 @@
   <img width=390 src="https://github-readme-streak-stats-Daniel97er.vercel.app/?user=Daniel97er&count_private=true&theme=react&border_radius=10" alt="streak stats"/>
   <img width=325 align="center" src="https://github-readme-stats-Daniel97er.vercel.app/api/top-langs/?username=Daniel97er&langs_count=4&layout=compact&theme=react&border_radius=10&size_weight=0.5&count_weight=0.5&exclude_repo=github-readme-stats" alt="top langs" />
 </div>
+
+<br />
+
+![Meist genutzte Sprachen](https://github-readme-stats.vercel.app/api/top-langs/?username=Daniel97er&layout=compact)
