@@ -7,3 +7,9 @@
 
 ![Snake animation](https://raw.githubusercontent.com/Daniel97er/Daniel97er/output/github-contribution-grid-snake-dark.svg)
 
+<h2 align="center">⚒️ Languages-Frameworks-Tools ⚒️</h2>
+<br/>
+<div align="center">
+    <img src="https://skillicons.dev/icons?i=react,bootstrap,html,css,vscode,github,git" />
+    <img src="https://skillicons.dev/icons?i=nodejs,python,javascript,c,java,mysql,flask,django" /><br>
+</div>
