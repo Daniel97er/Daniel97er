@@ -16,7 +16,7 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GH_README_STATS_TOKEN }}
         run: |
-          curl -o top-langs.svg "https://github-readme-stats.vercel.app/api/top-langs/?username=Daniel97er&theme=dark&langs_count=8&token=${GITHUB_TOKEN}"
+          curl -o top-langs.svg "https://github-readme-stats.vercel.app/api/top-langs/?username=Daniel97er&theme=dark&token=${GITHUB_TOKEN}&langs_count=6"
 
       - name: Commit and Push changes
         run: |
