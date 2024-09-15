@@ -6,7 +6,7 @@ import svgwrite
 url = 'https://api.github.com/user/repos?type=all'
 
 # GitHub Personal Access Token
-token = os.getenv('GITHUB_TOKEN')
+token = os.getenv('TOKEN_GITHUB')
 headers = {
     'Authorization': f'token {token}',
     'Accept': 'application/vnd.github.v3+json'
