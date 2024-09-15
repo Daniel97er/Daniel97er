@@ -17,12 +17,12 @@
 
 <h2 align="center">⚡ Stats ⚡</h2>
 <br>
-<h3 align="center">Public and private</h3>
+<h3 align="center">Public and private repositories</h3>
 
 ![TopLangs](https://raw.githubusercontent.com/Daniel97er/Daniel97er/main/top-langs.svg)
 
 <div  style="display: flex; justify-content: center;">
-  <h3 align="center">Public only</h3>
+  <h3 align="center">Public repositories only</h3>
   <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Daniel97er&langs_count=6&layout=compact&theme=dark" style="height: 195px;" />
   <img src="https://github-readme-streak-stats.herokuapp.com/?user=Daniel97er&theme=dark" style="height: 195px;"/>
 </div>
