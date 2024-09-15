@@ -1,8 +1,6 @@
 import os
 import requests
-import json
 import svgwrite
-from svgwrite import cm, mm
 
 # GitHub GraphQL API URL
 url = 'https://api.github.com/graphql'
@@ -40,6 +38,9 @@ query = """
 response = requests.post(url, headers=headers, json={'query': query})
 data = response.json()
 
+# Überprüfe die Antwort
+print("API Response:", data)
+
 # Sammeln der Sprachdaten
 languages = {}
 repos = data.get('data', {}).get('viewer', {}).get('repositories', {}).get('edges', [])
@@ -54,8 +55,11 @@ for repo in repos:
         else:
             languages[lang_name] = 1
 
+# Überprüfe die gesammelten Sprachen
+print("Languages Data:", languages)
+
 # Erstellen des SVG-Dokuments
-dwg = svgwrite.Drawing('top-langs.svg', profile='tiny', size=(210*mm, 297*mm))
+dwg = svgwrite.Drawing('top-langs.svg', profile='tiny', size=(210*svgwrite.mm, 297*svgwrite.mm))
 
 x_start = 10
 y_start = 10
