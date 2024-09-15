@@ -56,7 +56,7 @@ for repo in repos:
 total_repos = sum(languages.values())
 
 # Erstellen des SVG-Dokuments im Dark Theme
-dwg = svgwrite.Drawing('top-langs.svg', profile='tiny', size=(210*svgwrite.mm, 297*svgwrite.mm))
+dwg = svgwrite.Drawing('top-langs.svg', profile='tiny')
 dwg.add(dwg.rect(insert=(0, 0), size=('100%', '100%'), fill='black'))
 
 x_start = 10
@@ -82,7 +82,20 @@ for index, (lang, count) in enumerate(languages.items()):
     dwg.add(dwg.rect(insert=(x_start, y), size=(bar_width, bar_height), fill=color))
     
     # Zeichnen des Textes
-    dwg.add(dwg.text(f"{lang}: {count} ({(count / total_repos) * 100:.2f}%)", insert=(x_start + bar_width + 10, y + bar_height - 2), fill='white', font_size='15px', font_family='Arial'))
+    dwg.add(dwg.text(f"{lang}: {(count / total_repos) * 100:.2f}%", insert=(x_start + bar_width + 10, y + bar_height - 2), fill='white', font_size='15px', font_family='Arial'))
+
+# Zeichnen des Farbbalkens
+y = y_start + len(languages) * y_offset + 20
+x = x_start
+for index, (lang, count) in enumerate(languages.items()):
+    bar_width = (count / total_repos) * max_bar_width
+    color = colors[index % len(colors)]
+    dwg.add(dwg.rect(insert=(x, y), size=(bar_width, bar_height), fill=color))
+    x += bar_width
+
+# Anpassen der Größe des SVG-Dokuments
+dwg['width'] = max(195, x + 10)
+dwg['height'] = y + bar_height + 10
 
 # Speichern der SVG-Datei
 dwg.save()
