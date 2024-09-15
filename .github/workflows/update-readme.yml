@@ -14,10 +14,9 @@ jobs:
 
       - name: Generate GitHub Readme Stats
         env:
-          GITHUB_TOKEN: ${{ secrets.GH_README_STATS_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GH_PERSONAL_ACCESS_TOKEN }}
         run: |
-          curl -L -o top-langs.svg \
-            "https://github-readme-stats.vercel.app/api/top-langs/?username=Daniel97er&theme=dark&count-private=true&langs_count=6&token=${{ secrets.GH_README_STATS_TOKEN }}"
+          python generate_svg.py
 
       - name: Commit and Push changes
         run: |
