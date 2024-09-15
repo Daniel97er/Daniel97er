@@ -18,8 +18,8 @@
 <h2 align="center">⚡ Stats ⚡</h2>
 <br>
 
+![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=Daniel97er&langs_count=6&layout=compact)
+
 <div  style="display: flex; justify-content: center;">
-  ![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=Daniel97er&langs_count=6&layout=compact)
-  <img src="top-langs.svg" alt="Top Langs" style="height: 195px;"/>
   <img src="https://github-readme-streak-stats.herokuapp.com/?user=Daniel97er&theme=dark" style="height: 195px;"/>
 </div>
