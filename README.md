@@ -18,8 +18,7 @@
 <h2 align="center">⚡ Stats ⚡</h2>
 <br>
 
-![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=Daniel97er&langs_count=6&layout=compact)
-
 <div  style="display: flex; justify-content: center;">
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Daniel97er&langs_count=6&layout=compact&theme=dark" height="195" />
   <img src="https://github-readme-streak-stats.herokuapp.com/?user=Daniel97er&theme=dark" style="height: 195px;"/>
 </div>
