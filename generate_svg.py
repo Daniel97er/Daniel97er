@@ -2,35 +2,58 @@ import os
 import requests
 import svgwrite
 
-# GitHub API URL für alle Repositories
-url = 'https://api.github.com/user/repos?type=all'
+# GitHub GraphQL API URL
+url = 'https://api.github.com/graphql'
 
-# GitHub Personal Access Token
-token = os.getenv('TOKEN_GITHUB')
+# Authentifizierungstoken aus Umgebungsvariablen
+token = os.getenv('GITHUB_TOKEN')
 headers = {
     'Authorization': f'token {token}',
     'Accept': 'application/vnd.github.v3+json'
 }
 
+# GraphQL-Abfrage
+query = """
+{
+  viewer {
+    repositories(first: 100) {
+      edges {
+        node {
+          name
+          languages(first: 10) {
+            edges {
+              node {
+                name
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+"""
+
 # Anfrage an die API
-response = requests.get(url, headers=headers)
-repos = response.json()
+response = requests.post(url, headers=headers, json={'query': query})
+data = response.json()
 
 # Sammeln der Sprachdaten
 languages = {}
-for repo in repos:
-    lang_url = repo['languages_url']
-    lang_response = requests.get(lang_url, headers=headers)
-    repo_languages = lang_response.json()
+repos = data.get('data', {}).get('viewer', {}).get('repositories', {}).get('edges', [])
 
-    for lang in repo_languages:
-        if lang in languages:
-            languages[lang] += repo_languages[lang]
+for repo in repos:
+    repo_node = repo.get('node', {})
+    lang_edges = repo_node.get('languages', {}).get('edges', [])
+    for lang_edge in lang_edges:
+        lang_name = lang_edge.get('node', {}).get('name', 'Unknown')
+        if lang_name in languages:
+            languages[lang_name] += 1
         else:
-            languages[lang] = repo_languages[lang]
+            languages[lang_name] = 1
 
 # Erstellen des SVG-Dokuments
-dwg = svgwrite.Drawing('top-langs.svg', profile='tiny', size=(195, 195))
+dwg = svgwrite.Drawing('top-langs.svg', profile='tiny', size=(210*svgwrite.mm, 297*svgwrite.mm))
 
 x_start = 10
 y_start = 10
@@ -38,7 +61,7 @@ x_offset = 80
 y_offset = 20
 
 # Zeichnen der Sprachstatistiken
-for index, (lang, count) in enumerate(sorted(languages.items(), key=lambda item: item[1], reverse=True)):
+for index, (lang, count) in enumerate(languages.items()):
     y = y_start + index * y_offset
     dwg.add(dwg.text(f"{lang}: {count}", insert=(x_start, y), fill='black'))
 
