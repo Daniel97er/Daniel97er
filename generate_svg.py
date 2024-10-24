@@ -38,32 +38,6 @@ query = """
 response = requests.post(url, headers=headers, json={'query': query})
 data = response.json()
 
-# Überprüfen des Statuscodes der Antwort
-if response.status_code != 200:
-    print("Fehler bei der API-Anfrage:", response.status_code, response.text)
-else:
-    # Überprüfe die gesamte Antwort
-    data = response.json()
-    
-    # Datenverarbeitung
-    if 'data' in data and 'viewer' in data['data']:
-        viewer = data['data']['viewer']
-        print("Benutzername:", viewer.get('login', 'Unbekannt'))
-        
-        repositories = viewer.get('repositories', {}).get('edges', [])
-        print(f"Anzahl der Repositories: {len(repositories)}")
-        
-        # Ausgabe der Repositories-Namen und ihrer Sprachen
-        for repo in repositories:
-            repo_name = repo['node'].get('name', 'Unbekannt')
-            print("Repository-Name:", repo_name)
-            
-            languages = repo['node'].get('languages', {}).get('edges', [])
-            lang_names = [lang['node']['name'] for lang in languages]
-            print(f"  - Sprachen: {', '.join(lang_names) if lang_names else 'Keine Sprachen'}")
-    else:
-        print("Fehler oder keine Daten erhalten:", data)
-
 # Sammeln der Sprachdaten
 languages = {}
 repos = data.get('data', {}).get('viewer', {}).get('repositories', {}).get('edges', [])
