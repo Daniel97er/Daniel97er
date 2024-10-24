@@ -38,6 +38,9 @@ query = """
 response = requests.post(url, headers=headers, json={'query': query})
 data = response.json()
 
+# Überprüfe die gesamte Antwort
+print(data)
+
 # Sammeln der Sprachdaten
 languages = {}
 repos = data.get('data', {}).get('viewer', {}).get('repositories', {}).get('edges', [])
