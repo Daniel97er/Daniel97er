@@ -1,5 +1,4 @@
- 
-<img align="right" src="https://visitor-badge.laobi.icu/badge?page_id=Daniel97er.Daniel97er" />
+ <img align="right" src="https://visitor-badge.laobi.icu/badge?page_id=Daniel97er.Daniel97er" />
 
 <h1 align="center">
     <img src="https://readme-typing-svg.herokuapp.com/?font=Righteous&size=35&center=true&vCenter=true&width=500&height=70&duration=4000&lines=Hi+There!+👋;+I'm+Daniel!;" />
@@ -24,5 +23,5 @@
 <div  style="display: flex; justify-content: center;">
   <h3 align="center">Public repositories only</h3>
   <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Daniel97er&langs_count=6&layout=compact&theme=dark" style="height: 195px;" />
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=Daniel97er&theme=dark" style="height: 195px;"/>
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=Daniel97er&theme=dark" style="height: 195px;" />
 </div>
