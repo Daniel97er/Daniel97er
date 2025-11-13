@@ -1,16 +1,31 @@
-## Hi there 👋
+<h1 align="center" style="color: #1E90FF;">Hello, I am Daniel 👋</h1>
 
-<!--
-**Daniel97er/Daniel97er** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+<p align="center">
+  <b>💻 Developer | Problem Solver | Tech Enthusiast</b>
+</p>
 
-Here are some ideas to get you started:
+---
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+### 🚀 About Me
+I'm passionate about coding, automation, and creating smart solutions.  
+I enjoy learning new technologies and improving my programming skills every day.
+
+---
+
+### 🧠 Languages and Tools
+Here are some of the technologies I work with:
+
+<p>
+  <img src="https://img.shields.io/badge/Code-Java-orange?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Code-Python-yellow?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Framework-Django-green?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Automation-Selenium-blue?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Frontend-HTML5-red?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Frontend-CSS3-blue?style=for-the-badge" />
+</p>
+
+
+---
+
+⭐ *“Code is like humor. When you have to explain it, it’s bad.” - Cory House*
+
