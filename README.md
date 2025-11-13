@@ -19,6 +19,7 @@ Here are some of the technologies I work with:
   <img src="https://img.shields.io/badge/Code-C-blue?style=for-the-badge" />
   <img src="https://img.shields.io/badge/Code-Java-orange?style=for-the-badge" />
   <img src="https://img.shields.io/badge/Code-Python-yellow?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Code-Kotlin-purple?style=for-the-badge" />
   <img src="https://img.shields.io/badge/Code-JavaScript-yellow?style=for-the-badge" />
   <img src="https://img.shields.io/badge/Frontend-HTML5-red?style=for-the-badge" />
   <img src="https://img.shields.io/badge/Frontend-CSS3-blue?style=for-the-badge" />
